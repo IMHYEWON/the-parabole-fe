@@ -43,22 +43,22 @@ export default function Home() {
                 </h2>
 
                 <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                  <Link href={LINKS.SELLER_PRODUCT_LIST}>
-                    <a className="flex flex-row">
-                      <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                        <img src={ICON.ICON_LIST}></img>
-                      </span>
-                      <p className="text-lg">상품 목록</p>
-                    </a>
+                  <Link href={LINKS.SELLER_PRODUCT_LIST} className="flex flex-row" legacyBehavior>
+
+                    <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                      <img src={ICON.ICON_LIST}></img>
+                    </span>
+                    <p className="text-lg">상품 목록</p>
+
                   </Link>
 
-                  <Link href={LINKS.SELLER_PRODUCT_NEW}>
-                    <a className="flex flex-row">
-                      <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                        <img src={ICON.ICON_POST}></img>
-                      </span>
-                      <p className="text-lg">상품 등록</p>
-                    </a>
+                  <Link href={LINKS.SELLER_PRODUCT_NEW} className="flex flex-row" legacyBehavior>
+
+                    <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                      <img src={ICON.ICON_POST}></img>
+                    </span>
+                    <p className="text-lg">상품 등록</p>
+
                   </Link>
                 </nav>
               </div>
@@ -69,31 +69,34 @@ export default function Home() {
                 </h2>
 
                 <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                  <Link href={LINKS.SELLER_COUPON_LIST}>
-                    <a className="flex flex-row">
-                      <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                        <img src={ICON.ICON_LIST}></img>
-                      </span>
-                      <p className="text-lg">쿠폰 목록</p>
-                    </a>
+                  <Link href={LINKS.SELLER_COUPON_LIST} className="flex flex-row" legacyBehavior>
+
+                    <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                      <img src={ICON.ICON_LIST}></img>
+                    </span>
+                    <p className="text-lg">쿠폰 목록</p>
+
                   </Link>
 
-                  <Link href={LINKS.SELLER_COUPON_NEW}>
-                    <a className="flex flex-row">
-                      <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                        <img src={ICON.ICON_POST}></img>
-                      </span>
-                      <p className="text-lg">쿠폰 등록</p>
-                    </a>
+                  <Link href={LINKS.SELLER_COUPON_NEW} className="flex flex-row" legacyBehavior>
+
+                    <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                      <img src={ICON.ICON_POST}></img>
+                    </span>
+                    <p className="text-lg">쿠폰 등록</p>
+
                   </Link>
 
-                  <Link href={LINKS.SELLER_COUPON_ASSIGN}>
-                    <a className="flex flex-row">
-                      <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                        <img src={ICON.ICON_CHECK}></img>
-                      </span>
-                      <p className="text-lg">쿠폰 배정</p>
-                    </a>
+                  <Link
+                    href={LINKS.SELLER_COUPON_ASSIGN}
+                    className="flex flex-row"
+                    legacyBehavior>
+
+                    <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                      <img src={ICON.ICON_CHECK}></img>
+                    </span>
+                    <p className="text-lg">쿠폰 배정</p>
+
                   </Link>
                 </nav>
               </div>
@@ -104,13 +107,13 @@ export default function Home() {
                 </h2>
 
                 <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                  <Link href={LINKS.SELLER_ORDER_DETAIL}>
-                    <a className="flex flex-row">
-                      <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                        <img src={ICON.ICON_CHECK}></img>
-                      </span>
-                      <p className="text-lg">주문/배송 관리</p>
-                    </a>
+                  <Link href={LINKS.SELLER_ORDER_DETAIL} className="flex flex-row" legacyBehavior>
+
+                    <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                      <img src={ICON.ICON_CHECK}></img>
+                    </span>
+                    <p className="text-lg">주문/배송 관리</p>
+
                   </Link>
                 </nav>
               </div>
@@ -121,22 +124,22 @@ export default function Home() {
                 </h2>
 
                 <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                  <Link href={LINKS.SELLER_EVENT_LIST}>
-                    <a className="flex flex-row">
-                      <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                        <img src={ICON.ICON_LIST}></img>
-                      </span>
-                      <p className="text-lg">이벤트 목록</p>
-                    </a>
+                  <Link href={LINKS.SELLER_EVENT_LIST} className="flex flex-row" legacyBehavior>
+
+                    <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                      <img src={ICON.ICON_LIST}></img>
+                    </span>
+                    <p className="text-lg">이벤트 목록</p>
+
                   </Link>
 
-                  <Link href={LINKS.SELLER_EVENT_NEW}>
-                    <a className="flex flex-row">
-                      <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
-                        <img src={ICON.ICON_POST}></img>
-                      </span>
-                      <p className="text-lg">이벤트 등록</p>
-                    </a>
+                  <Link href={LINKS.SELLER_EVENT_NEW} className="flex flex-row" legacyBehavior>
+
+                    <span className="w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
+                      <img src={ICON.ICON_POST}></img>
+                    </span>
+                    <p className="text-lg">이벤트 등록</p>
+
                   </Link>
                 </nav>
               </div>

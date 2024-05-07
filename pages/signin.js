@@ -147,7 +147,7 @@ export default function Signin() {
                 </span>
               </div>
 
-              <Link href={NAVER_AUTH_URI}>
+              <Link href={NAVER_AUTH_URI} legacyBehavior>
                 <button className="flex justify-center items-center bg-green-500 hover:bg-green-600 active:bg-green-700 focus-visible:ring ring-green-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
                   <a
                     title="Gapo, Public domain, via Wikimedia Commons"
@@ -167,7 +167,7 @@ export default function Signin() {
                 </button>
               </Link>
 
-              <Link href={KAKAO_AUTH_URI}>
+              <Link href={KAKAO_AUTH_URI} legacyBehavior>
                 <button className="flex justify-center items-center bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-700 focus-visible:ring ring-yellow-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
                   <a
                     title="Kakao Corp., Public domain, via Wikimedia Commons"
@@ -187,7 +187,7 @@ export default function Signin() {
                 </button>
               </Link>
 
-              <Link href={GOOGLE_AUTH_URI}>
+              <Link href={GOOGLE_AUTH_URI} legacyBehavior>
                 <button className="flex justify-center items-center bg-white hover:bg-gray-100 active:bg-gray-200 border border-gray-300 focus-visible:ring ring-gray-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 gap-2 px-8 py-3">
                   <svg
                     className="w-5 h-5 shrink-0"

@@ -14,7 +14,7 @@ export default function Order({ order }) {
       <OrderDetailSection className="order-detail-section">
         <OrderImgSection className="order-img-section">
           <LinkToProduct>
-            <Link href={`/product/${order.productId}`}>
+            <Link href={`/product/${order.productId}`} legacyBehavior>
               <img src={order.productThumbnailImg} width="100%" margin="0" />
             </Link>
           </LinkToProduct>
@@ -22,7 +22,7 @@ export default function Order({ order }) {
         <OrderProductSection className="order-product-section">
           <ProductTitleSection className="product-title-section">
             <LinkToProduct>
-              <Link href={`/product/${order.productId}`}>
+              <Link href={`/product/${order.productId}`} legacyBehavior>
                 {order.productName}
               </Link>
             </LinkToProduct>

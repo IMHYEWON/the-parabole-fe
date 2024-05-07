@@ -76,7 +76,7 @@ export default function CommerceHeaderMenuModal({
     if (isMain) {
       return (
         <li>
-          <Link href={href}>
+          <Link href={href} legacyBehavior>
             <MainLinkSection className="hover:scale-110">
               <img src={imgSrc} className="w-8" />
               <span className="pl-2">{name}</span>
@@ -87,7 +87,7 @@ export default function CommerceHeaderMenuModal({
     } else {
       return (
         <li>
-          <Link href={href}>
+          <Link href={href} legacyBehavior>
             <SubLinkSection className="hover:scale-110">
               <span className="pl-2">{name}</span>
             </SubLinkSection>
@@ -129,7 +129,7 @@ export default function CommerceHeaderMenuModal({
           <a onClick={closeModalFunc}>
             <CloseButton />
           </a>
-          <Link href={LINKS.MAIN}>
+          <Link href={LINKS.MAIN} legacyBehavior>
             <TopLogoSection className="top-logo-section flex title-font items-center mb-4 md:mb-0">
               <img src="/parabole.svg" className="w-12" />
               <span className="ml-5 font-semibold text-2xl text-mainblue">

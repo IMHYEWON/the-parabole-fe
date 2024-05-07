@@ -65,7 +65,7 @@ export default function CommerceHeader() {
     if (token) {
       return (
         <>
-          <Link href={LINKS.MYPAGE}>
+          <Link href={LINKS.MYPAGE} legacyBehavior>
             <a className="px-5 font-medium hover:text-gray-700">마이페이지</a>
           </Link>
           <div>
@@ -76,18 +76,18 @@ export default function CommerceHeader() {
         </>
       );
     } else {
-      return (
-        <>
-          <Link href={LINKS.SIGNIN}>
-            <a className="px-5 font-medium hover:text-gray-700">로그인</a>
-          </Link>
-          <Link href={LINKS.SIGNUP}>
-            <a className="px-5 font-medium hover:text-gray-700 border-l border-r">
-              회원가입
-            </a>
-          </Link>
-        </>
-      );
+      return <>
+        <Link href={LINKS.SIGNIN} className="px-5 font-medium hover:text-gray-700">
+          로그인
+        </Link>
+        <Link
+          href={LINKS.SIGNUP}
+          className="px-5 font-medium hover:text-gray-700 border-l border-r">
+          
+            회원가입
+          
+        </Link>
+      </>;
     }
   }
 
@@ -96,25 +96,32 @@ export default function CommerceHeader() {
       <header className="body-font flex flex-col">
         <HeaderSection className="md:fixed w-full h-12 md:h-24 bg-white md:border-b md:border-gray-200 md:z-50">
           <HeaderContainer className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <Link href={LINKS.MAIN}>
-              <a className="flex title-font items-center ">
-                <img src="/parabole.svg" className="w-12" />
-                <span className="ml-5 font-semibold text-2xl text-mainblue">
-                  The Parabole
-                </span>
-              </a>
+            <Link
+              href={LINKS.MAIN}
+              className="flex title-font items-center "
+              legacyBehavior>
+
+              <img src="/parabole.svg" className="w-12" />
+              <span className="ml-5 font-semibold text-2xl text-mainblue">
+                The Parabole
+              </span>
+
             </Link>
 
             <nav className="mx-10 flex flex-wrap items-center text-base justify-center">
-              <Link href={LINKS.PRODUCT}>
-                <a className="p-4 text-xl font-semibold hover:font-semibold hover:text-secondblue">
+              <Link
+                href={LINKS.PRODUCT}
+                className="p-4 text-xl font-semibold hover:font-semibold hover:text-secondblue">
+                
                   스토어
-                </a>
+                
               </Link>
-              <Link href={LINKS.EVENT}>
-                <a className="p-4 text-xl font-semibold hover:font-semibold hover:text-secondblue">
+              <Link
+                href={LINKS.EVENT}
+                className="p-4 text-xl font-semibold hover:font-semibold hover:text-secondblue">
+                
                   이벤트
-                </a>
+                
               </Link>
             </nav>
 
@@ -123,13 +130,13 @@ export default function CommerceHeader() {
                 <SearchBar placeholder={'통합검색'} />
               </LargeSearchBarSection>
               <LargeCartSection>
-                <Link href={LINKS.CART}>
-                  <a className="inline-block md:px-4">
-                    <img
-                      src={ICON_CART_BLACK}
-                      className="w-8 hover:scale-110"
-                    />
-                  </a>
+                <Link href={LINKS.CART} className="inline-block md:px-4" legacyBehavior>
+
+                  <img
+                    src={ICON_CART_BLACK}
+                    className="w-8 hover:scale-110"
+                  />
+
                 </Link>
               </LargeCartSection>
             </nav>
@@ -146,47 +153,54 @@ export default function CommerceHeader() {
       <header className="body-font flex flex-col">
         <HeaderSection className="md:fixed w-full h-12 md:h-24 bg-white md:border-b md:border-gray-200 md:z-50">
           <HeaderContainer className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <Link href={LINKS.MAIN}>
-              <a className="flex title-font items-center mb-4 md:mb-0">
-                <img src="/parabole.svg" className="w-12" />
-                <span className="ml-5 font-semibold text-2xl text-mainblue">
-                  The Parabole
-                </span>
-              </a>
+            <Link
+              href={LINKS.MAIN}
+              className="flex title-font items-center mb-4 md:mb-0"
+              legacyBehavior>
+
+              <img src="/parabole.svg" className="w-12" />
+              <span className="ml-5 font-semibold text-2xl text-mainblue">
+                The Parabole
+              </span>
+
             </Link>
 
             <nav className="md:mr-auto md:ml-10 flex flex-wrap items-center text-base justify-center">
-              <Link href={LINKS.PRODUCT}>
-                <a className="mr-10 text-xl font-semibold hover:font-semibold hover:text-secondblue">
+              <Link
+                href={LINKS.PRODUCT}
+                className="mr-10 text-xl font-semibold hover:font-semibold hover:text-secondblue">
+                
                   스토어
-                </a>
+                
               </Link>
-              <Link href={LINKS.EVENT}>
-                <a className="mr-5 text-xl font-semibold hover:font-semibold hover:text-secondblue">
+              <Link
+                href={LINKS.EVENT}
+                className="mr-5 text-xl font-semibold hover:font-semibold hover:text-secondblue">
+                
                   이벤트
-                </a>
+                
               </Link>
             </nav>
 
             <nav className="flex flex-row grow mx-auto items-center text-base justify-center pt-3">
               <div>
-                <Link href={LINKS.PRODUCT}>
-                  <a className="inline-block px-4">
-                    <img
-                      src={ICON_SEARCH_MAGNIFY}
-                      className="w-6 hover:scale-110"
-                    />
-                  </a>
+                <Link href={LINKS.PRODUCT} className="inline-block px-4" legacyBehavior>
+
+                  <img
+                    src={ICON_SEARCH_MAGNIFY}
+                    className="w-6 hover:scale-110"
+                  />
+
                 </Link>
               </div>
               <div>
-                <Link href={LINKS.CART}>
-                  <a className="inline-block px-4">
-                    <img
-                      src={ICON_CART_BLACK}
-                      className="w-8 hover:scale-110"
-                    />
-                  </a>
+                <Link href={LINKS.CART} className="inline-block px-4" legacyBehavior>
+
+                  <img
+                    src={ICON_CART_BLACK}
+                    className="w-8 hover:scale-110"
+                  />
+
                 </Link>
               </div>
             </nav>
@@ -211,31 +225,34 @@ export default function CommerceHeader() {
               </div>
             </MobileMenuSection>
             <MobileTheParaboleLogoSection className="mobile-the-parabole-logo-section">
-              <Link href={LINKS.MAIN}>
-                <a className="flex title-font items-center mb-4 justify-center">
-                  <img src="/parabole.svg" className="w-12 hover:scale-110" />
-                </a>
+              <Link
+                href={LINKS.MAIN}
+                className="flex title-font items-center mb-4 justify-center"
+                legacyBehavior>
+
+                <img src="/parabole.svg" className="w-12 hover:scale-110" />
+
               </Link>
             </MobileTheParaboleLogoSection>
             <MobileButtonSection className="mobile-button-section">
               <div className="mr-2 mt-2 ">
-                <Link href={LINKS.PRODUCT}>
-                  <a className="inline-block">
-                    <img
-                      src={ICON_SEARCH_MAGNIFY}
-                      className="w-6 hover:scale-110"
-                    />
-                  </a>
+                <Link href={LINKS.PRODUCT} className="inline-block" legacyBehavior>
+
+                  <img
+                    src={ICON_SEARCH_MAGNIFY}
+                    className="w-6 hover:scale-110"
+                  />
+
                 </Link>
               </div>
               <div className="mr-2 mt-2 ">
-                <Link href={LINKS.CART}>
-                  <a className="inline-block">
-                    <img
-                      src={ICON_CART_BLACK}
-                      className="w-8 hover:scale-110"
-                    />
-                  </a>
+                <Link href={LINKS.CART} className="inline-block" legacyBehavior>
+
+                  <img
+                    src={ICON_CART_BLACK}
+                    className="w-8 hover:scale-110"
+                  />
+
                 </Link>
               </div>
             </MobileButtonSection>

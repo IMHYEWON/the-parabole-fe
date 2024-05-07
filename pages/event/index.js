@@ -4,14 +4,14 @@ import { GET_DATA } from '@apis/defaultApi';
 import CommerceLayout from '@components/common/CommerceLayout';
 import SiteHead from '@components/common/SiteHead.js';
 import Event from '@components/event/Event';
-import CustomSwiper from '@components/common/CustomSwiper';
+// import CustomSwiper from '@components/common/CustomSwiper';
 
 export default function EventHome() {
   return (
     <CommerceLayout>
       <SiteHead title="이벤트" url="https://theparabole.shop/event" />
       <div className="container py-12">
-        <CustomSwiper />
+        {/* <CustomSwiper /> */}
         <Row>
           <EventList />
         </Row>

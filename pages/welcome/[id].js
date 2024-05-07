@@ -25,13 +25,13 @@ export default function Welcome() {
             </div>
 
             <div className="flex justify-center items-center p-4 mb-7">
-              <Link href={LINKS.MAIN}>
+              <Link href={LINKS.MAIN} legacyBehavior>
                 <a>
                   <btn.Blue buttonText="홈으로" />
                 </a>
               </Link>
               <div className="px-3" />
-              <Link href={LINKS.SIGNIN}>
+              <Link href={LINKS.SIGNIN} legacyBehavior>
                 <a>
                   <btn.Blue buttonText="로그인하기" />
                 </a>

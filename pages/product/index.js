@@ -3,7 +3,7 @@ import CommerceLayout from '@components/common/CommerceLayout';
 import SiteHead from '@components/common/SiteHead.js';
 import { useRouter } from 'next/router';
 import ProductList from '@components/product/ProductList';
-import CustomSwiper from '@components/common/CustomSwiper';
+// import CustomSwiper from '@components/common/CustomSwiper';
 import SearchBar from '@components/input/SearchBar';
 
 export default function Products({}) {
@@ -25,7 +25,7 @@ export default function Products({}) {
             placeholder={inputSearchValue || '검색어를 입력해주세요'}
           />
         </SearchBarSection>
-        <CustomSwiper />
+        {/* <CustomSwiper /> */}
         <Row>
           <ProductList {...productListProps} />
         </Row>
